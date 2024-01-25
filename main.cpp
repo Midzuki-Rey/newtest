@@ -2,17 +2,29 @@
 using namespace std;
 int main()
 {
-    string a;
+    int a;
+    int d;
     cin >> a;
-    char b = a[0];
-    if (b <= 122 && b >= 97)
-    {
-        b = b - 32;
-    }
-    else
-    {
-        b = b + 32;
-    }
+    cin >> d;
 
-    cout << b;
+    while (a!=d)
+    {
+        if (a>d)
+        {
+            a = a-d;
+        }
+        else
+        {
+            d = d-a;
+        }
+    }
+    cout << "NOD=" << a;
+
 }
+
+
+
+
+
+
+
